@@ -1,0 +1,65 @@
+body {
+  margin: 0;
+  height: 100%;
+}
+
+.selector-background {
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  height: 0;
+  transition: all 0.2s;
+}
+
+.country-selector a {
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.country-selector img:hover {
+  border: solid 2px #ffffff !important;
+}
+
+.active-img {
+  border: solid 2px #ffffff !important;
+}
+
+.country-selector {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 0;
+  padding: 0 10px;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.2s;
+  background-color: #3fbabc;
+  box-shadow: 0px 8px 15px rgb(0 0 0 / 10%);
+  border-radius: 0 0 10px 10px;
+}
+
+.height {
+  height: 100%;
+}
+
+.country-selector img {
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+  border: solid 2px transparent;
+  border-radius: 50%;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.country-active {
+  height: 140px;
+  transition: all 0.2s;
+}
+
+.display {
+  display: none;
+}
